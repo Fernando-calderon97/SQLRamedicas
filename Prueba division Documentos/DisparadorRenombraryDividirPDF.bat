@@ -1,0 +1,3 @@
+@ECHO Renombre y Division PDF ...
+@ECHO OFF
+python prueba2ajustado.py

@@ -1,0 +1,205 @@
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    color: #ff8800;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0 0 20px 0 ;
+    padding: 0;
+  }
+  p {
+    padding-left: 7px;
+  }
+  .user_manual {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column_manual {
+    width: 47%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0px 10px 10px 10px;
+  }
+  .specification {
+    border: 2px solid #ff8800;
+    background-color: #ffffff;
+    padding: 0 7px;
+    border-radius: 3px;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .title {
+    background-color: #ff8800;
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+  .title_pages {
+    background-color: #0266ac;
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+  .specification h3 {
+    font-size: 19px;
+    color: #ff8800;
+    font-weight: 500;
+  }
+  .specification p {
+    color: #0266ac;
+  }
+  .specification p span {
+    font-weight: 300;
+  }
+  .pages {
+    background-color: #0266ac;
+    padding: 5px 7px;
+    border-radius: 3px;
+  }
+  .pages h3 {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .pages p {
+    color: #ffffff;
+  }
+  .pages p span {
+    font-weight: 500;
+  }
+</style>
+<div class="user_manual">
+  <div class="column_manual">
+    <div class="title">
+      <h2>Especificaciones</h2>
+    </div>
+    <div class="specification">
+      <h3>Objetivo</h3>
+      <p>Brindar una visión clara y centralizada de la gestión de compras mediante KPI(s) generales y detallados, análisis de proveedores, comportamiento de artículos y clientes, y acceso a la base maestra,  facilitando decisiones estraéticas basadas en datos confiables</p>
+      <h3>Frecuencia de actualización:</h3>
+      <p>
+        • Diariamente (1 vez)
+      </p>
+      <h3>Dirigido a:</h3>
+      <p>
+        • Departamento de compras
+      </p>
+      <h3>Encargado del BI</h3>
+      <p>
+        • Fernando Parra Calderón - Analista Junior BI  <br> En caso de no estar disponible encargados: Equipo Business Intelligence
+      </p>
+    </div>
+  </div>
+  <div class="column_manual">
+    <div class="title_pages">
+      <h2>Tableros</h2>
+    </div>
+    <div class="pages">
+      <h3>1. Informe General</h3>
+      <p>Objetivo: Ofrecer una vista genera del area de compras mediante indicadores clave, permitiendo ser visualizada por año, mes y por tipo de bodega</p>
+      <p>
+        <span>KPI(s):</span> <br>
+        • Promedio venta del mes <br>
+        • Valor total de inventario <br>
+        • Valor total de compra <br>
+        • Cantidad pedida <br>
+        • Cantidad recibida <br>
+        • Inventario mayor  a 90 Días <br>
+        • Fill rate acumulado <br>
+        • Unidades en el inventario <br>
+        • Días inventario <br>
+        • Fill Rate <br>
+        • Cantidad de articulos por tipo de rotación <br>
+      </p>
+      <p>
+        <span>Tablas:</span> <br>
+        • Valor inventario, promedio venta mes y dias inventario por tipo de bodega <br>
+        • Desplegable de valor de inventario por punto de dispensación <br>
+        • Valor inventario por clasificación ABC <br>
+        • Valor de inventario y % Participación por opcion articulo <br>
+      </p>
+      <p>
+        <span>Graficas:</span> <br>
+        • Distribución de unidades por Bodega
+      </p>
+      <h3>2. Detalle KPI(s)</h3>
+      <p>Objetivo: Ofrecer una visualizacion detallada de los indicadores mas relevantes del area de compras, con posibilidad de filtrar por fecha, usuario, articulo, días invenrtario, carta agotado, descontinuado y faltante  </p>
+      <p>
+        <span>KPI(s):</span> <br>
+        • Total articulos <br>
+        • Articulos con inventario <br>
+      </p>
+      <p>
+        <span>Tablas:</span> <br>
+        • Tabla KPI(s) Abastecimiento <br>
+        • Rotación mensual FV + OX <br>
+        • Cantidad Documuentos - Articulo x Usuario <br>
+        • Días de inventario por Usuario <br>
+      </p>
+      <h3>3. KPI(s) Proveedores</h3>
+      <p>Objetivo: Brindar información estratégica sobre los proveedores, los beneficios obtenidos, su evolución crecimiento anual de compras, con el fin de facilitar la toma de decisiones, fortalecer relaciones comerciales y optimizar la gestión de compras</p>
+      <p>
+        <span>KPI(s):</span> <br>
+        • Total portafolio <br>
+        • Fell_RateOC <br>
+      </p>
+      <p>
+        <span>Tablas:</span> <br>
+        • Posicion comercial, participación y crecimiento anual <br>
+      </p>
+      <p>
+        <span>Graficas:</span> <br>
+        • Crecimiento Anual <br>
+        • Comportamiento historico de compra x proyección 2025 <br>
+        • Comparativo de compra mensual mes año anterior vs mes año actual<br>
+      </p>
+      <h3>4. Base Maestra</h3>
+      <p>Objetivo: Centralizar la información de todos los artículos en una base maestra, incluyendo clasificación, ubicación, rotación, tendencia, proveedor y demás indicadores clave, para una gestión eficiente.</p>
+      <p>
+        <span>Filtros:</span> <br>
+        • Carta agotado <br>
+        • Descontinuado <br>
+        • Usuario <br>
+        • Tipo rotación <br>
+        • Clasifición (ABC) <br>
+        • Dias de Inventario <br>
+        • Codigo articulo <br>
+        • Cur <br>
+      </p>
+      <h3>5. Comportamiento Cliente</h3>
+      <p>Objetivo: Mostrar la evolución del total de compras de los clientes en su ultimo trimestre </p>
+      <p>
+        <span>KPI(s):</span> <br>
+        • Clientes tipo A <br>
+        • Clientes tipo B <br>
+        • Clientes tipo C <br>
+        • Clientes tipo Sin rotación <br>
+      </p>
+      <p>
+        <span>Tablas:</span> <br>
+        • Clasificación cliente en base a su rotación de compra en el ultimo trimestre <br>
+      </p>
+      <h3>6. Comportamiento Articulos</h3>
+      <p>Objetivo: Mostrar la evolución del total de la rotación de los articulos en su ultimo trimestre</p>
+      <p>
+        <span>KPI(s):</span> <br>
+        • Articulos tipo A <br>
+        • Articulos tipo B <br>
+        • Articulos tipo C <br>
+        • Articulos tipo Sin rotación <br>
+      </p>
+      <p>
+        <span>Tablas:</span> <br>
+        • Clasificación de articulo en base a su rotación de compra en el ultimo trimestre <br>
+      </p>
+    </div>
+  </div>
+</div>
